@@ -1,0 +1,14 @@
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+a {
+  color: $primaryColor;
+  text-decoration: none;
+}

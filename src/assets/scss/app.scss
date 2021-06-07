@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .25s;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background: rgb(21, 21, 51);
+}
+.centered {
+  padding: 0 20px;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+// configs
+@import './configs/variables.scss';
+@import './configs/mixins.scss';
+@import './configs/resets.scss';
+
+// includes
+@import './includes/banner.scss';
+@import './includes/footer.scss';
+@import './includes/game.scss';
+@import './includes/gameProviders.scss';
+@import './includes/header.scss';
+@import './includes/highlights.scss';

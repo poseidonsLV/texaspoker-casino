@@ -1,0 +1,71 @@
+.highlight {
+  margin: 70px 0px;
+  font-style: italic;
+  padding: 0 20px !important;
+  &__top-title {
+    color: $thirdColor;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  &__title{
+    color: white;
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+    text-shadow: -3px 10px black;
+    text-transform: uppercase;
+  }
+  &__desc{
+    color: $secondaryColor;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+  }
+  &__button {
+    margin-top: 25px;
+    @include button;
+    i {
+      margin-left: 15px;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+#top-highlight {
+  margin: 50px 0;
+  max-width: 500px;
+  width: 100%;
+}
+#bottom-highlight {
+  background: linear-gradient(rgba(4, 26, 122, 0.8),rgba(0, 0, 0, 0.8)),url('https://media.istockphoto.com/photos/beautiful-glamour-couple-against-the-background-of-casino-poker-picture-id1158016188?k=6&m=1158016188&s=612x612&w=0&h=yZeOctsmg0wQWIshKT4d1jyWwlvNN3fkVrSRFLM3thA=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 10px 1px rgba(4, 26, 122, 1);
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .highlight__desc {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .highlight {
+    &__top-title {
+      font-size: 4.5vw;
+    }
+    &__title {
+      font-size: 8vw;
+    }
+    &__desc {
+      font-size: 2vw;
+    }
+  }
+}

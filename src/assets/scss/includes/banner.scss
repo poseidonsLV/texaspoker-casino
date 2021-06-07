@@ -1,0 +1,88 @@
+#banners {
+  display: flex;
+  align-items: center;
+  .banner {
+    width: 100%;
+    min-height: 250px;
+    height: 100%;
+    padding: 40px;
+    margin-right: 10px;
+    border-radius: 3px;
+    font-style: italic;
+    background: rgb(21, 22, 63);
+    &__top-title {
+      text-transform: uppercase;
+      color: $secondaryColor;
+      font-size: 1.2rem;  
+    }
+    &__title {
+      text-transform: uppercase;
+      color: $thirdColor;
+      margin: 10px 0;
+      text-shadow: 0px 3px rgba(255, 166, 0, 0.4);
+      font-size: 2.5rem;
+    }
+    &__jackpot-size {
+      font-size: 4rem;
+      color: white;
+    }
+    &__desc {
+      color: $secondaryColor;
+      text-transform: uppercase;
+      margin-top: 15px;
+      font-size: 1.5rem;
+    }
+    &__download{
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      width: fit-content;
+      border-radius: 3px;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.03);
+        color: black;
+        background: white;
+      }
+      i {
+        font-size: 2rem;
+      }
+      &__text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        font-style: normal;
+        small {
+          color: $secondaryColor;
+        }
+        strong {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #banners {
+    flex-direction: column;
+    .banner {
+      margin: 10px 0;
+    }
+  }
+}
+@media (max-width: 425px) {
+  #banners .banner {
+    &__title {
+      font-size: 7vw;
+    }
+    &__jackpot-size {
+      font-size: 11vw;
+    }
+    &__desc {
+      font-size: 5vw;
+    }
+  }
+}
